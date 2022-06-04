@@ -1,0 +1,25 @@
+$dark: rgba(43, 42, 42, 0.872);
+$mute: rgba(189, 189, 189, 0.762);
+
+@mixin flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flexRow {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin center {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@mixin border {
+  border-width: 2px;
+  border-style: outset;
+  border-color: $mute;
+  border-image: initial;
+}

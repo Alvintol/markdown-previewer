@@ -1,6 +1,5 @@
-import logo from './logo.svg';
 
-function App() {
+const App = () => {
   return (
     <div className="app">
 
