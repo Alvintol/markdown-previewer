@@ -1,9 +1,10 @@
-const Markdown = props => {
+const Editor = props => {
 return (
   <div id='mark-down'>
-    MARKDDOWN
+    <textarea
+    id='editor'></textarea>
   </div>
 )
 };
 
-export default Markdown;
+export default Editor;

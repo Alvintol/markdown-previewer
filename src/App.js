@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Markdown from './Markdown';
+import Editor from './Markdown';
 import Preview from './Preview';
 import './styling/sass/app.scss';
 
@@ -12,7 +12,7 @@ const App = () => {
 
   return (
     <div id='app'>
-      <Markdown 
+      <Editor 
       input={state.input}
       onChange={()=> console.log('ONCHANGE')}
       />
