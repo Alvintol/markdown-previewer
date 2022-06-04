@@ -1,0 +1,21 @@
+@import './mixins';
+
+#app {
+  @include flexColumn;
+  @include center;
+
+  #mark-down {
+    @include border;
+    border-radius: 8px;
+    margin: 2%;
+    width: 75vw;
+    min-height: 40vh;
+  }
+  #preview {
+    @include border;
+    border-radius: 8px;
+    margin: 2%;
+    width: 75vw;
+    min-height: 50vh;
+  }
+}

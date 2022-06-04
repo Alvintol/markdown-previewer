@@ -1,1 +1,27 @@
-
+#app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#app #mark-down {
+  border-width: 2px;
+  border-style: outset;
+  border-color: rgba(189, 189, 189, 0.762);
+  border-image: initial;
+  border-radius: 8px;
+  margin: 2%;
+  width: 75vw;
+  min-height: 40vh;
+}
+#app #preview {
+  border-width: 2px;
+  border-style: outset;
+  border-color: rgba(189, 189, 189, 0.762);
+  border-image: initial;
+  border-radius: 8px;
+  margin: 2%;
+  width: 75vw;
+  min-height: 50vh;
+}
