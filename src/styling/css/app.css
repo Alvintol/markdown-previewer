@@ -31,11 +31,14 @@
   border-style: outset;
   border-color: rgba(189, 189, 189, 0.762);
   border-image: initial;
+  border-radius: 5px;
   width: 100%;
   position: relative;
 }
 #app .top-bar button {
+  border-radius: 3px;
   position: absolute;
+  margin: 0;
   top: 0;
   right: 0;
 }
