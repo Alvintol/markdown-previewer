@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Editor from './Markdown';
+import Editor from './Editor';
 import Preview from './Preview';
 import './styling/sass/app.scss';
 

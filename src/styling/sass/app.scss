@@ -5,17 +5,31 @@
   @include center;
 
   #mark-down {
-    @include border;
-    border-radius: 8px;
-    margin: 2%;
-    width: 75vw;
-    min-height: 40vh;
+    // @include border;
+    @include box;
+    height: 40vh;
+
+    textarea {
+      margin: 0;
+      height: 90%;
+      width: 99%;
+    }
   }
   #preview {
     @include border;
-    border-radius: 8px;
-    margin: 2%;
-    width: 75vw;
+    @include box;
     min-height: 50vh;
+  }
+
+  .top-bar {
+    @include border;
+    width: 100%;
+    position: relative;
+
+      button {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
   }
 }

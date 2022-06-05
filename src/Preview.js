@@ -1,7 +1,11 @@
+import TopBar from './TopBar';
+
 const Preview = props => {
 
   return <div id='preview'>
-    PREVIEW
+    <TopBar 
+    title='PREVIEW'
+    />
   </div>;
 };
 

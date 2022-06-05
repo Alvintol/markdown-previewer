@@ -18,8 +18,23 @@ $mute: rgba(189, 189, 189, 0.762);
 }
 
 @mixin border {
-  border-width: 2px;
   border-style: outset;
   border-color: $mute;
   border-image: initial;
+}
+@mixin topRound {
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+}
+
+@mixin bottomRound {
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+@mixin box {
+  border-width: 2px;
+  border-radius: 8px;
+  margin: 2%;
+  width: 75vw;
 }

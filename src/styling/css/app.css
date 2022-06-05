@@ -7,21 +7,35 @@
 }
 #app #mark-down {
   border-width: 2px;
-  border-style: outset;
-  border-color: rgba(189, 189, 189, 0.762);
-  border-image: initial;
   border-radius: 8px;
   margin: 2%;
   width: 75vw;
-  min-height: 40vh;
+  height: 40vh;
+}
+#app #mark-down textarea {
+  margin: 0;
+  height: 90%;
+  width: 99%;
 }
 #app #preview {
-  border-width: 2px;
   border-style: outset;
   border-color: rgba(189, 189, 189, 0.762);
   border-image: initial;
+  border-width: 2px;
   border-radius: 8px;
   margin: 2%;
   width: 75vw;
   min-height: 50vh;
+}
+#app .top-bar {
+  border-style: outset;
+  border-color: rgba(189, 189, 189, 0.762);
+  border-image: initial;
+  width: 100%;
+  position: relative;
+}
+#app .top-bar button {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
