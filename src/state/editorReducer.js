@@ -4,3 +4,10 @@ export const editorReducer = (state = '', action) => {
     default: return state;
   }
 } 
+
+export const previewReducer = (state= '', action) => {
+  switch (action.type) {
+    case 'preview': return state + action.payload;
+    default: return state;
+  }
+}
