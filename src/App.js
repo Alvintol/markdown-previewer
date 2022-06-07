@@ -6,14 +6,14 @@ import './styling/sass/app.scss';
 const App = () => {
 
   const [state, setState] = useState({
-    input: '',
+    editor: '',
     preview:''
   })
 
   return (
     <div id='app'>
       <Editor 
-      input={state.input}
+      editor={state.editor}
       onChange={()=> console.log('ONCHANGE')}
       />
       <Preview 

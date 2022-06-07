@@ -6,6 +6,7 @@ const Preview = props => {
     <TopBar 
     title='PREVIEW'
     />
+    
   </div>;
 };
 
