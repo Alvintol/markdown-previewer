@@ -1,5 +1,6 @@
 import { useSelector } from 'react-redux';
 import TopBar from './TopBar';
+import marked from 'mark.js';
 
 const Preview = (props) => {
   const { editor } = useSelector((state) => state);
@@ -8,7 +9,7 @@ const Preview = (props) => {
     <div id='preview'>
       <TopBar title='PREVIEW' />
 
-      {editor}
+      {marked(editor)}
     </div>
   );
 };
