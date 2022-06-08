@@ -21,7 +21,6 @@ const windowSizeReducer = (state = 'even', action) => {
 };
 
 
-
 const reducers = combineReducers({
   editor: editorReducer,
   windowSize: windowSizeReducer
