@@ -5,4 +5,4 @@ export const updateEditor = (input) => {
       payload: input
     });
   };
-}
+};

@@ -1,21 +1,26 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { bindActionCreators } from 'redux';
+import * as actionCreator from './state/actionCreator';
 import TopBar from './TopBar';
 
 const Editor = (props) => {
-  // const { editor, preview } = useSelector((state) => state);
-  // const dispatch = useDispatch();
+  const { editor } = useSelector((state) => state);
+  const dispatch = useDispatch();
 
-
-  const changeEditor = (input) => console.log(input);
+  const { updateEditor } = bindActionCreators(actionCreator, dispatch);
 
   return (
     <div id='mark-down'>
       <TopBar title='EDITOR' />
       <textarea
         id='editor'
-        value={props.editor}
-        onChange={(e) => changeEditor(e.target.value)}
+        value={editor}
+        onChange={(e) =>
+          updateEditor({
+            type: 'change',
+            payload: e.target.value,
+          })
+        }
       />
     </div>
   );
