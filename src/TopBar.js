@@ -7,7 +7,7 @@ const TopBar = (props) => {
 
   const { windowSize } = useSelector((state) => state);
   const dispatch = useDispatch();
-  const { maxEditor, maxPreview, evenView } = bindActionCreators(
+  const { maxWindow } = bindActionCreators(
     actionCreator,
     dispatch
   );
@@ -16,12 +16,12 @@ const TopBar = (props) => {
     <div className='top-bar' data-id={title}>
       {title}
       <div className='top-container'>
-        {windowSize === 'even' ? (
-          <button onClick={() => console.log('clickedmax', title, 'button')}>
+        {windowSize === 'EVEN' ? (
+          <button onClick={() => maxWindow(title)}>
             <i className='max fa-solid fa-maximize'></i>
           </button>
         ) : (
-          <button onClick={()=> evenView('even')}>
+          <button onClick={()=> maxWindow('EVEN')}>
             <i className='min fa-solid fa-minimize'></i>
           </button>
         )}

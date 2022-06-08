@@ -4,20 +4,9 @@ export const updateEditor = (input) => (dispatch) =>
     payload: input,
   });
 
-export const maxEditor = (input) => (dispatch) =>
+export const maxWindow = (input) => (dispatch) =>
   dispatch({
-    type: 'editor',
+    type: 'change',
     payload: input,
   });
 
-export const maxPreview = (input) => (dispatch) =>
-  dispatch({
-    type: 'preview',
-    payload: input,
-  });
-
-export const evenView = (input) => (dispatch) =>
-  dispatch({
-    type: 'even',
-    payload: input,
-  });

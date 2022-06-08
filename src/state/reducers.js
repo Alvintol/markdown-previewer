@@ -9,12 +9,10 @@ const editorReducer = (state = '', action) => {
   }
 };
 
-const windowSizeReducer = (state = 'even', action) => {
+const windowSizeReducer = (state = 'EVEN', action) => {
   switch (action.type) {
-    case 'editor':
-      return state + action.payload;
-    case 'preview':
-      return state + action.payload;
+    case 'change':
+      return action.payload;
     default:
       return state;
   }
