@@ -9,8 +9,10 @@ const editorReducer = (state = '', action) => {
   }
 };
 
-const previewReducer = (state = '', action) => {
+const windowSizeReducer = (state = 'even', action) => {
   switch (action.type) {
+    case 'editor':
+      return state + action.payload;
     case 'preview':
       return state + action.payload;
     default:
@@ -18,9 +20,11 @@ const previewReducer = (state = '', action) => {
   }
 };
 
+
+
 const reducers = combineReducers({
   editor: editorReducer,
-  preview: previewReducer,
+  windowSize: windowSizeReducer
 });
 
 export default reducers;

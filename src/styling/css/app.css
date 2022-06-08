@@ -19,7 +19,7 @@ body #app #mark-down {
 body #app #mark-down textarea {
   margin: 0;
   height: 90%;
-  width: 99%;
+  width: 99.5%;
 }
 body #app #preview {
   border-style: outset;
@@ -90,9 +90,12 @@ body #app .top-bar {
   border-style: outset;
   border-color: rgba(189, 189, 189, 0.762);
   border-image: initial;
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;
   border-radius: 5px;
   width: 100%;
   position: relative;
+  text-align: center;
 }
 body #app .top-bar button {
   border-radius: 3px;

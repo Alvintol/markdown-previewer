@@ -14,7 +14,7 @@ body {
       textarea {
         margin: 0;
         height: 90%;
-        width: 99%;
+        width: 99.5%;
       }
     }
 
@@ -90,9 +90,11 @@ body {
 
     .top-bar {
       @include border;
+      @include bottomRound;
       border-radius: 5px;
       width: 100%;
       position: relative;
+      text-align: center;
 
       button {
         border-radius: 3px;
