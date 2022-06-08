@@ -4,7 +4,7 @@ import { marked } from 'marked';
 import Prism from 'prismjs';
 
 const Preview = (props) => {
-  const { editor } = useSelector((state) => state);
+  const { editor, windowSize } = useSelector((state) => state);
 
   marked.setOptions({
     breaks: true,
@@ -18,8 +18,11 @@ const Preview = (props) => {
     return `<a target="_blank" href="${href}">${text}</a>`;
   };
 
+  const window = windowSize === 'EDITOR' ? {display: 'none'} : null;
+
   return (
-    <div id='preview'>
+    <div id='preview' style={window}
+    >
       <TopBar title='PREVIEW' />
       <div
         id='injected'
