@@ -17,7 +17,7 @@ const TopBar = (props) => {
       {title}
       <div className='top-container'>
         {windowSize === 'even' ? (
-          <button>
+          <button onClick={() => console.log('clickedmax', title, 'button')}>
             <i className='max fa-solid fa-maximize'></i>
           </button>
         ) : (
