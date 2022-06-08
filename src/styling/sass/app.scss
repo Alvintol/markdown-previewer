@@ -13,6 +13,7 @@ body {
       height: 40vh;
 
       textarea {
+        background-color: rgba(240, 248, 255, 0.762);
         margin: 0;
         height: 90%;
         width: 99.5%;
@@ -45,6 +46,9 @@ body {
 
       > p > code {
         padding: 3px;
+      }
+      p > a {
+        color: #31bd29;
       }
 
       code {

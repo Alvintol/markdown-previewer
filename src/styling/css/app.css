@@ -18,6 +18,7 @@ body #app #mark-down {
   height: 40vh;
 }
 body #app #mark-down textarea {
+  background-color: rgba(240, 248, 255, 0.762);
   margin: 0;
   height: 90%;
   width: 99.5%;
@@ -52,6 +53,9 @@ body #app #preview blockquote {
 }
 body #app #preview > p > code {
   padding: 3px;
+}
+body #app #preview p > a {
+  color: #31bd29;
 }
 body #app #preview code {
   background: rgba(120, 120, 120, 0.639);
