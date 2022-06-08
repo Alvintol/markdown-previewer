@@ -1,23 +1,27 @@
-#app {
+body {
+  background-color: rgba(43, 42, 42, 0.872);
+  text-align: left;
+}
+body #app {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-#app #mark-down {
+body #app #mark-down {
   border-width: 2px;
   border-radius: 8px;
   margin: 2%;
   width: 75vw;
   height: 40vh;
 }
-#app #mark-down textarea {
+body #app #mark-down textarea {
   margin: 0;
   height: 90%;
   width: 99%;
 }
-#app #preview {
+body #app #preview {
   border-style: outset;
   border-color: rgba(189, 189, 189, 0.762);
   border-image: initial;
@@ -28,55 +32,61 @@
   word-wrap: break-word;
   min-height: 50vh;
   display: block;
+  color: white;
+  background-color: black;
+  text-align: left;
 }
-#app #preview #injected {
+body #app #preview #injected {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  margin: 2%;
 }
-#app #preview blockquote {
-  border-left: 3px solid #224b4b;
-  color: #224b4b;
+body #app #preview blockquote {
+  border-left: 3px solid #1b3e3e;
+  color: #6bb3b3;
   padding-left: 5px;
   margin-left: 25px;
 }
-#app #preview > p > code {
+body #app #preview > p > code {
   padding: 3px;
 }
-#app #preview code {
-  background: white;
+body #app #preview code {
+  background: rgba(120, 120, 120, 0.639);
   font-size: 0.875rem;
   font-weight: bold;
+  border-radius: 2px;
 }
-#app #preview pre {
+body #app #preview pre {
   display: block;
   overflow: auto;
-  background: white;
+  background: rgba(120, 120, 120, 0.639);
   padding: 5px;
   line-height: 1.2;
+  border-radius: 2px;
 }
-#app #preview h1 {
+body #app #preview h1 {
   border-bottom: 2px solid rgba(43, 42, 42, 0.872);
 }
-#app #preview h2 {
+body #app #preview h2 {
   border-bottom: 1px solid rgba(43, 42, 42, 0.872);
 }
-#app #preview table {
+body #app #preview table {
   border-collapse: collapse;
 }
-#app #preview td,
-#app #preview th {
+body #app #preview td,
+body #app #preview th {
   border: 2px solid rgba(43, 42, 42, 0.872);
   padding-left: 5px;
   padding-right: 5px;
 }
-#app #preview img {
+body #app #preview img {
   display: block;
   max-width: 90%;
   margin: 2rem auto;
 }
-#app .top-bar {
+body #app .top-bar {
   border-style: outset;
   border-color: rgba(189, 189, 189, 0.762);
   border-image: initial;
@@ -84,7 +94,7 @@
   width: 100%;
   position: relative;
 }
-#app .top-bar button {
+body #app .top-bar button {
   border-radius: 3px;
   position: absolute;
   margin: 0;
