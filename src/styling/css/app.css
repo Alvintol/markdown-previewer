@@ -58,7 +58,7 @@ body #app #preview p > a {
   color: #31bd29;
 }
 body #app #preview code {
-  background: rgba(120, 120, 120, 0.639);
+  background: rgba(120, 120, 120, 0.345);
   font-size: 0.875rem;
   font-weight: bold;
   border-radius: 2px;
