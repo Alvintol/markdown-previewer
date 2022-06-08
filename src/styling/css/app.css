@@ -1,5 +1,6 @@
 body {
-  background-color: rgba(43, 42, 42, 0.872);
+  background-color: #357e94;
+  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
   text-align: left;
 }
 body #app {
@@ -90,8 +91,8 @@ body #app .top-bar {
   border-style: outset;
   border-color: rgba(189, 189, 189, 0.762);
   border-image: initial;
-  border-bottom-right-radius: 12px;
-  border-bottom-left-radius: 12px;
+  background-color: #1e6e6e;
+  color: antiquewhite;
   border-radius: 5px;
   width: 100%;
   position: relative;

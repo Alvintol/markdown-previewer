@@ -1,6 +1,7 @@
 @import './mixins';
 body {
-  background-color: $dark;
+  background-color: #357e94;
+  background-image: url('https://www.transparenttextures.com/patterns/45-degree-fabric-light.png');
   text-align: left;
 
   #app {
@@ -90,7 +91,8 @@ body {
 
     .top-bar {
       @include border;
-      @include bottomRound;
+      background-color: #1e6e6e;
+      color: antiquewhite;
       border-radius: 5px;
       width: 100%;
       position: relative;
