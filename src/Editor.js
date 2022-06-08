@@ -15,12 +15,9 @@ const Editor = (props) => {
       <textarea
         id='editor'
         value={editor}
-        onChange={(e) =>
-          updateEditor({
-            type: 'change',
-            payload: e.target.value,
-          })
-        }
+        onChange={(e) => {
+          updateEditor(e.target.value);
+        }}
       />
     </div>
   );

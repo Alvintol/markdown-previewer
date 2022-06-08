@@ -1,9 +1,10 @@
 import { combineReducers } from 'redux';
 
 const editorReducer = (state = '', action) => {
+  console.log('STATE:', state, 'ACTION:', action)
   switch (action.type) {
     case 'input':
-      return state + action.payload;
+      return action.payload;
     default:
       return state;
   }

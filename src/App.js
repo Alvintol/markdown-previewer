@@ -8,10 +8,8 @@ const App = () => {
 
   return (
     <div id='app'>
-      <Editor 
-      />
-      <Preview 
-      />
+      <Editor />
+      <Preview />
     </div>
   );
 };

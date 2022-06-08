@@ -1,7 +1,7 @@
 export const updateEditor = (input) => {
   return (dispatch) => {
     dispatch({
-      type: 'change',
+      type: 'input',
       payload: input
     });
   };
