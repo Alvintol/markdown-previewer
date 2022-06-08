@@ -3,9 +3,9 @@
 #app {
   @include flexColumn;
   @include center;
+  
 
   #mark-down {
-    // @include border;
     @include box;
     height: 40vh;
 
@@ -15,10 +15,69 @@
       width: 99%;
     }
   }
+
   #preview {
     @include border;
     @include box;
+    word-wrap: break-word;
     min-height: 50vh;
+    display: block;
+    
+    #injected {
+      @include flexColumn;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+
+    blockquote {
+      border-left: 3px solid #224b4b;
+      color: #224b4b;
+      padding-left: 5px;
+      margin-left: 25px;
+    }
+
+    > p > code {
+      padding: 3px;
+    }
+
+    code {
+      background: white;
+      font-size: 0.875rem;
+      font-weight: bold;
+    }
+
+    pre {
+      display: block;
+      overflow: auto;
+      background: white;
+      padding: 5px;
+      line-height: 1.2;
+    }
+
+    h1 {
+      border-bottom: 2px solid $dark;
+    }
+
+    h2 {
+      border-bottom: 1px solid $dark;
+    }
+
+    table {
+      border-collapse: collapse;
+    }
+
+    td,
+    th {
+      border: 2px solid $dark;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+
+    img {
+      display: block;
+      max-width: 90%;
+      margin: 2rem auto;
+    }
   }
 
   .top-bar {
@@ -27,12 +86,12 @@
     width: 100%;
     position: relative;
 
-      button {
-        border-radius: 3px;
-        position: absolute;
-        margin: 0;
-        top: 0;
-        right: 0;
+    button {
+      border-radius: 3px;
+      position: absolute;
+      margin: 0;
+      top: 0;
+      right: 0;
     }
   }
 }

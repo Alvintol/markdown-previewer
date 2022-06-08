@@ -25,7 +25,56 @@
   border-radius: 8px;
   margin: 2%;
   width: 75vw;
+  word-wrap: break-word;
   min-height: 50vh;
+  display: block;
+}
+#app #preview #injected {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+#app #preview blockquote {
+  border-left: 3px solid #224b4b;
+  color: #224b4b;
+  padding-left: 5px;
+  margin-left: 25px;
+}
+#app #preview > p > code {
+  padding: 3px;
+}
+#app #preview code {
+  background: white;
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+#app #preview pre {
+  display: block;
+  overflow: auto;
+  background: white;
+  padding: 5px;
+  line-height: 1.2;
+}
+#app #preview h1 {
+  border-bottom: 2px solid rgba(43, 42, 42, 0.872);
+}
+#app #preview h2 {
+  border-bottom: 1px solid rgba(43, 42, 42, 0.872);
+}
+#app #preview table {
+  border-collapse: collapse;
+}
+#app #preview td,
+#app #preview th {
+  border: 2px solid rgba(43, 42, 42, 0.872);
+  padding-left: 5px;
+  padding-right: 5px;
+}
+#app #preview img {
+  display: block;
+  max-width: 90%;
+  margin: 2rem auto;
 }
 #app .top-bar {
   border-style: outset;

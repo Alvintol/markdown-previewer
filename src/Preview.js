@@ -22,12 +22,11 @@ const Preview = (props) => {
     <div id='preview'>
       <TopBar title='PREVIEW' />
       <div
+        id='injected'
         dangerouslySetInnerHTML={{
           __html: marked(editor, { renderer: renderer }),
         }}
       ></div>
-
-      
     </div>
   );
 };
