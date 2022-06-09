@@ -2,6 +2,9 @@
 
 A README.md previewer clone
 
+[Test/demo the app functions](https://alvintol-markdown-preview.netlify.app/)
+<img width="1419" alt="markdown-previewer" src="https://user-images.githubusercontent.com/96437758/172893189-b77a3c0b-92ca-4815-b5ed-804a3c59ae51.png">
+
 ## Running the Project
 
 ### `npm start`
